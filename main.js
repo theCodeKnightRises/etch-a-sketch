@@ -93,7 +93,9 @@ resetDefaults.addEventListener('click', () => {
 	brushColor.value = '#000000';
 	canvasColor.value = '#efefef';
 	gridBox.style.background = canvasColor.value;
-	slider.value = 16;
+	slider.value = '16';
+	pixelDensityValue.textContent = `(${slider.value}x${slider.value})`;
+	generateGrid();
 });
 
 function generateGrid() {
