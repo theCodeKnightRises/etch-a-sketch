@@ -16,7 +16,7 @@
 						<h2>Color</h2>
 						<div class="btns">
 							<div class="color">
-								<input type="color" id="foreground" value="#000000" />
+								<input type="color" id="foreground" style="value="#000000" />
 								<label for="foreground" class="label">Brush Color</label>
 							</div>
 							<div class="color">
@@ -28,36 +28,40 @@
 					<div class="sections">
 						<h2>Modes</h2>
 						<div class="btns">
-							<button class="btn">
+							<button class="btn solid">
 								<span class="material-symbols-outlined"> stylus_brush </span>Solid
 							</button>
-							<button class="btn">
+							<button class="btn spectrum">
 								<span class="material-symbols-outlined"> palette </span>Spectrum
 							</button>
-							<button class="btn">
+							<button class="btn shade">
 								<span class="material-symbols-outlined"> brightness_4 </span>Shade
 							</button>
-							<button class="btn"><span class="material-symbols-outlined"> wb_sunny </span>Glow</button>
-							<button class="btn"><span class="material-symbols-outlined">ink_eraser</span>Erase</button>
+							<button class="btn glow">
+								<span class="material-symbols-outlined"> wb_sunny </span>Glow
+							</button>
+							<button class="btn erase">
+								<span class="material-symbols-outlined">ink_eraser</span>Erase
+							</button>
 						</div>
 					</div>
 					<div class="sections">
 						<h2>Grid</h2>
 						<div class="btns">
 							<div>
-								<p>Pixel Density (16x16)</p>
+								<p>Pixel Density <span class="slider-value">(16x16)</span></p>
 								<input
 									class="slider"
 									type="range"
 									name="grid-range"
-									value="64"
+									value="16"
 									min="1"
 									max="100"
 									step="1"
 								/>
 							</div>
 							<div class="btns">
-								<button class="btn">
+								<button class="btn gridOverlay">
 									<span class="material-symbols-outlined"> grid_on </span>Grid Overlay
 								</button>
 							</div>
@@ -66,10 +70,10 @@
 					<div class="sections">
 						<h2>Actions</h2>
 						<div class="btns">
-							<button class="btn">
+							<button class="btn clear-canvas">
 								<span class="material-symbols-outlined"> scan_delete </span>Clear Canvas
 							</button>
-							<button class="btn">
+							<button class="btn reset-defaults">
 								<span class="material-symbols-outlined">restore_page</span>Reset Defaults
 							</button>
 						</div>
@@ -78,5 +82,6 @@
 			</div>
 			<div class="right"></div>
 		</div>
+		<script src="./main.js"></script>
 	</body>
 </html>
