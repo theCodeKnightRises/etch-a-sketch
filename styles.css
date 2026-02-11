@@ -63,6 +63,7 @@ body {
 h1 {
 	margin: 0 0 0 75px;
 	color: #0678c4;
+	font-family: Inter;
 }
 
 .sections {
@@ -72,6 +73,7 @@ h1 {
 
 h2 {
 	font-size: 16px;
+	font-family: Inter;
 }
 
 .sections > * {
